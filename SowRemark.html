@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Faculty|Social Wing Remark</title>
+<link rel = "icon" href ="REvents/dy.png" type = "image/x-icon">
+<style>
+body{
+            margin: 0;
+            padding: 0;
+    overflow: hidden;
+        }
+        button{
+            outline: none;
+            outline: none;
+        }
+    #logo{
+        float: left;
+        margin: 0;
+        padding: 0;
+        }  
+    #re{
+        padding-top: 40px;
+        margin-left: 20px;
+    }
+    #re span{
+        color: maroon;
+        padding-left: 5px;
+    }
+    
+    #navbar{
+        background-color: maroon;
+        height: 60px;
+    }
+    #one{
+        float: left;
+        padding-left: 20px;
+        color: white;
+        
+       
+    }
+       
+   #btn1{
+        float: right;
+        margin: 20px;
+        height: 25px;
+        background-color: limegreen;
+        text-align: center;
+        font-family: serif;
+        width: 90px;
+        border-radius: 20px;
+    }
+    
+    #main{
+        
+        height:460px;
+        
+    }
+    #content{
+        width:900px;
+        height: 400px;
+        margin:auto;
+        border: 2px solid lightblue;
+        
+        
+       
+    }
+   
+    input, label, select, textarea, button{
+        margin: 5px;
+        font-size: 18px;
+        font-family: serif;
+        
+       
+        
+    }
+    
+    #btn{
+        background-color:lightblue;
+        outline: none;
+        font-size: 15px;
+        padding: 5px;
+        width: 90px;
+        border-radius: 20px;
+        
+    }
+    
+    img{
+        float: left;
+        width: 300px;
+    } 
+    textarea{
+        height: 200px;
+        width:500px;
+    }
+    #logo{
+        width: 180px;
+    }
+   
+    
+</style>
+    
+</head>
+<body>
+<header id="top">
+<img id="logo" src="REvents/logo.png" height="100px" width="180px">
+<h1 id="re">RAIT<span>EVENTS</span></h1>
+<br>
+
+</header>
+<nav id="navbar">
+<h1 id="one">Social Wing</h1>
+<button type="button" id="btn1" onclick="window.location.href='index.html';">Log Out</button>
+</nav>
+<br>
+<div id="main">
+<br>
+<div id="content">
+<form action="mailto: thakurpranjal9@gmail.com" method="post" enctype="text/plain">
+<img src="REvents/formside.jpg" height="400px" width="300px">
+<label for="type" id="label">From</label><br>
+<select  value="type" id="type" name="From">
+<option value="principal">Principal RAIT</option>
+<option value="faculty co">Faculty Co-Ordinator</option>
+<option value="faculty">Faculty</option>
+</select><br>
+<label for="sub">Subject :</label>
+<input type="text" id="sub" name="Subject" required><br>
+<label for="issue">Write Your Issue Here :</label><br>
+<textarea id="issue" name="Regarding" required ></textarea><br>
+<input id="btn" type="submit" value="Send">
+<input  id="btn" type="reset" value="Reset">
+</form>    
+</div>
+</div>
+</body>
+</html>
+

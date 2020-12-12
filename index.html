@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RAIT Events</title>
+    <link rel = "icon" href ="REvents/dy.png" type = "image/x-icon">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+       
+        body{
+            background-image:url(REvents/background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        
+        input{
+            outline: none;
+        }
+        #left{
+            float: left;
+            margin-top:5%;
+            margin-left: 50px;
+           
+            
+           
+        }
+        #right{
+            float: right;
+            display: block;
+            margin-top: 15%;
+            margin-right: 140px;
+            box-shadow: 8px 16px 16px black;
+            height: 250px;
+            width: 500px;
+            background-image: linear-gradient(lightblue,lightgreen,yellow,coral,white)
+        }
+        #heading{
+            font-size: 60px;
+            padding: 10px;
+            font-weight: 300;
+        }
+        #clr{
+            color: maroon;
+        }
+        #text{
+            font-size: 40px;
+            padding: 10px;
+        }
+        form{
+            padding: 20px;
+        }
+        input{
+            padding: 10px;
+            margin: 10px;
+            width: 250px;
+        }
+        #head2{
+            font-size: 40px;
+            font-weight: 300;
+        }
+        button{
+            padding: 6px;
+            margin-top: 5px;
+            background-color: limegreen;
+            color: black;
+            border-radius: 15px;
+            width: 80px;
+            outline: none;
+        }
+        @media (max-width:500px){
+            #logo{
+               height: 60px;
+            width:100px;
+                
+            }
+            #heading{
+                font-size: 30px;
+            }
+            #text{
+                font-size: 20px;
+            }
+            #right{
+                height:200px;
+                width: 350px;
+                margin: auto;
+                margin-top: 50px;
+                margin-right: 50px;
+            }
+            #head2{
+                font-size:20px;
+                }
+            input{
+                height:10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="left">
+        <img src="REvents/logo.png" height="100px" width="200px" id="logo"><br>
+        <span id="heading">RAIT <span id="clr">EVENTS</span></span><br>
+        <span id="text">Let's Get Started!</span>
+     </div>
+     <div id="right">
+     <form onsubmit=" return validate()" method="get">
+     <span id="head2">Login</span><br>
+     <i class="fa fa-user icon" style="font-size: 20px; color: purple;"></i>
+     <input type="email" name="Mail Id" id="email" placeholder="Enter Your User-Id" required><br> 
+     <i class="fa fa-key icon"style="font-size: 20px; color: purple;"></i>
+     <input type="password" name="Password" id="pass" placeholder="Enter Your Password" required><br>
+     <button type="submit" id="button">Submit</button>
+    </form>
+  </div>
+  <script type="text/javascript">
+  var attempt = 3; // Variable to count number of attempts.
+                   // Below function Executes on click of login button.
+   function validate(){
+   var username = document.getElementById("email").value;
+   var password = document.getElementById("pass").value;
+   if ( username == "faculty@rait.ac.in" && password == "123"){
+   window.location = "Faculty1.html"; // Redirecting to other page.
+   return false;
+   }
+   else if( username == "student@rait.ac.in" && password == "123"){
+   window.location = "Student1.html"; // Redirecting to other page.
+   return false; 
+   }
+   else if( username == "sow@rait.ac.in" && password == "123"){
+   window.location = "SocialWing.html"; // Redirecting to other page.
+   return false;
+   }
+   else{
+   attempt --;// Decrementing by one.
+   alert("You have left "+attempt+" attempt;");
+   // Disabling fields after 3 attempts.
+   if( attempt == 0){
+   document.getElementById("email").disabled = true;
+   document.getElementById("pass").disabled = true;
+   document.getElementById("button").disabled = true;
+   return false;
+}
+}
+}
+    
+  </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Social Wing|Contact Us</title>
+    <link rel = "icon" href ="REvents/dy.png" type = "image/x-icon">
+    <style>
+         body{
+        margin: 0;
+        padding: 0;
+    }
+    button{
+        outline: none;
+    }
+    #logo{
+        float: left;
+        margin: 0;
+        padding: 0;
+    } 
+    #re{
+        padding-top: 40px;
+        margin-left: 20px;
+    }
+    #re span{
+        color: maroon;
+        padding-left: 5px;
+    }
+    
+    #navbar{
+        background-color: maroon;
+        height: 60px;
+    }
+    #one{
+        float: left;
+        padding-left: 20px;
+        color: white;
+        
+       
+    }
+     #btn1{
+        float: right;
+        margin: 20px;
+        height: 25px;
+        background-color: limegreen;
+        text-align: center;
+        font-family: serif;
+        width: 90px;
+        border-radius: 20px;
+    }
+        #contact{
+            border: 2px solid white;
+            width: 900px;
+            height:400px;
+            margin: auto;
+            padding: 5px;
+            
+        }
+        #con{
+            float: left;
+        }
+        label, input, select, textarea, button{
+            margin-top: 10px;
+            margin-left: 10px;
+            font-size: 15px;
+        }
+        label{
+            background-color: lightgray;
+            color: black;
+            padding: 3px;
+            border-radius: 5px;
+        }
+        #btn{
+            background-color: lightgray;
+            padding: 5px;
+            width: 90px;
+            border-radius: 20px;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+<header id="top">
+<img id="logo" src="REvents/logo.png" height="100px" width="200px">
+<h1 id="re">RAIT<span>EVENTS</span></h1>
+<br>
+</header>
+<nav id="navbar">
+<h1 id="one">Social Wing</h1>
+<button type="button" id="btn1" onclick="window.location.href='index.html';">Log Out</button>
+</nav>
+<br>
+<div id="contact">
+<img src="Images/conform.gif" id="con"height="400px" width="200px">
+<form action="mailto: thakurpranjal9@gmail.com" method="post" enctype="text/plain">
+<label for="Fname">Enter Your Full Name :</label>
+<input type="text" id="Fname" name="Name" required><br>
+<label for="dept">Select your Department :</label>
+<select id="dept" name="Department" required>
+<option value="IT">Information Technology</option>
+<option value="CS">Computer Science</option>
+<option value="EXTC">Electronics and Telecommunication</option>
+<option value="Elec">Electronics</option>
+<option value="Instru">Instrumentation</option>
+</select><br>
+<label for="roll">Enter your RollNo. :</label>
+<input type="text" id="roll" name="RollNo." required><br>
+<label for="email">Enter your Mail :</label>
+<input type="email" id="email" name="Email" required><br><br>
+<label for="info">Enter your Query Here :</label><br>
+<textarea id="info" rows="10" cols="80" placeholder="Text Here" name="Query"></textarea><br>
+<input id="btn" type="submit" value="Send">
+<input  id="btn" type="reset" value="Reset">
+</form>      
+    
+</div>
+</body>
+</html>
