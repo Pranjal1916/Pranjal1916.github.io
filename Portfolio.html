@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Portfolio</title>
+    <link rel = "icon" href ="Images/title.png" type = "image/x-icon">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: lightgray;
+           
+        }
+              
+         #name{
+            text-align: center;
+            
+        }
+        #hello{
+            text-align: center;
+        }
+        #first{
+            height: 300px;
+            width: 1000px;
+            border: 2px solid burlywood;
+            margin: auto;
+            background-color: burlywood;
+            
+              
+        }
+        #first:hover{
+            box-shadow: 0 8px 16px 0;
+        }
+        img{
+            float: right;
+            margin-right: 
+        }
+        #one{
+            margin-left: 30px;
+            margin-top: 20px;
+            background-color: black;
+            color: white;
+            width: 180px;
+            text-align: center;
+            border-radius: 20px;
+        }
+        #abotme{
+            margin-left: 30px;
+            
+        }
+        #second{
+            border: 2px solid bisque;
+            height: 320px;
+            width: 1000px;
+            margin: auto;
+            margin-top: 10px;
+            background-color:bisque;
+        }
+        #second:hover{
+            box-shadow: 0 8px 16px 0;
+        }
+        #chart{
+            float: right;
+        }
+        #two{
+            margin-left: 30px;
+            background-color: black;
+            color: white;
+            width: 195px;
+            text-align: center;
+            border-radius: 20px;
+        }
+        #three{
+             margin-left: 30px;
+        }
+        #courses{
+             margin-left: 30px;
+             list-style: square;
+        }
+        #check{
+            margin-left: 30px;
+            color: darkred;
+            text-decoration: none;
+        }
+        #third{
+            border: 2px solid burlywood;
+            width: 1000px;
+            height: 460px;
+            margin: auto;
+            margin-top: 10px;
+            background-color: burlywood;
+        }
+        #third:hover{
+            box-shadow: 0 8px 16px 0;
+        }
+        #proj{
+            float: right;
+        }
+        #four{
+             margin-left: 30px;
+        }
+        #projects{
+             margin-left: 30px;
+        }
+        dt{
+            color: darkred;
+        }
+        #fourth{
+            border:2px solid bisque;
+            width: 1000px;
+            height: 200px;
+            margin: auto;
+            margin-top: 10px;
+            background-color: bisque;
+        }
+        #fourth:hover{
+            box-shadow: 0 8px 16px 0;
+        }
+        #certiimg{
+            float: right;
+        }
+        #five{
+             margin-left: 30px;
+             background-color: black;
+             color: white;
+            width: 240px;
+            text-align: center;
+            border-radius: 20px;
+        }
+        #activity{
+             margin-left: 30px;
+             list-style: square;
+        }
+        #fifth{
+            border:2px solid burlywood;
+            height: 227px;
+            width: 1000px;
+            margin: auto;
+            margin-top: 10px;
+            background-color: burlywood;
+            margin-bottom: 10px;
+            }
+        #fifth:hover{
+            box-shadow: 0 8px 16px 0;
+        }
+        #phone{
+            float: right;
+        }
+        #six{
+            margin-left: 30px;
+            background-color: black;
+            color: white;
+            width: 360px;
+            text-align: center;
+            border-radius: 20px;
+        }
+        #contact{
+             margin-left: 100px;
+             vertical-align: middle;
+            
+        }
+        span{
+            margin-left: 10px;
+            
+            
+        }
+        
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    
+        <h1 id="name">PRANJAL THAKUR</h1>
+		<h2 id="hello">Hello There!</h2>
+    <div id="first">
+		<img src="Images/Mypic.jpg" height="300px" width="250px">
+		<h3 id="one">A Little About Me!</h3>
+		<p id="abotme">I am Pranjal Thakur Third Year Information Technology Student in Ramrao Adik Institute Of Technology.<br>
+           Being an IT student I have gained Knowledge in various Pogramming Languages till date ,and many more to learn.<br>
+           I have done few projects linked with Online Courses , Internship , Workshop and College Assignments.<br>
+           Apart from academics I have been actively participating in various Social Activity, as well as co-curricular activites conducted by different 
+           committees in College . 
+       </p>
+	</div>
+	<div id="second">
+        <div id="chart">
+        </div>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['Languages', 'Hands On'],
+        ['HTML', 8],
+        ['ML and DL', 2],
+        ['CSS', 8],
+        ['C Language', 5],
+        ['Python', 3]
+        ]);
+        var options = {'title':'Worked with (Till now)', 'width':250, 'height':320};
+        var chart = new google.visualization.PieChart(document.getElementById('chart'));
+        chart.draw(data, options);
+          }
+        </script>
+		<h3 id="two">Technical Highlight's</h3>
+		<h3 id="three">Completed Courses and Workshop's attended</h3>
+        
+		<ul id="courses">
+		    <li>C language</li>
+            <li>Python</li>
+            <li>HTML 5</li>
+            <li>CSS 3</li>
+            <li>Javascript</li>
+            <li>Work with Data Science</li>
+            <li>Student Solar Ambassador Workshop</li>
+            <li>Know Your Algorithm</li>
+            <li>STTP 2020</li>
+        </ul>
+        <a id="check" href="https://github.com/Pranjal1916">Check out my Projects on Github !</a>
+    </div>
+    <div id="third">
+        <img src="Images/checklist.gif" id="proj" width="250px" height="460px">
+    	<h3 id="four">Project's that are Completed/ Working On</h3>
+    	<dl id="projects">
+           <dt>Think Bot</dt>
+              <dd>Think Bot is an Python based project. It's a Quiz  Game which tests your knowledge<br> in 3 programming languages Python,Java and C.It has three levels, and each level has a<br> minimum of 50% of the total Marks to Qualify it. Calculation of Score was done on <br>the
+              basis on answer.
+              </dd>
+           <dt>Puzzel Solver</dt>
+              <dd>Puzzel Solver is an Shell Script based project. It's a Number Puzzel game ,where<br> your number of moves are calculated 
+              and It has different level divided on the basis of<br> the Grid layout used.
+              </dd>
+           <dt>Py CRICKET</dt>
+              <dd>Cricket is an Python based project. It's based on the real cricket game ,where every<br> time when the bats man hit the ball the score
+              is calculated on the basis of the line the ball<br> crosses.The graphics was given with the help to Tkinter.
+              </dd>
+            <dt>Alzheimer's Disease Detector</dt>
+              <dd>ALzheimer's Disease Detector is an ML and Flutter based project. IT is used for detection<br> of Alzheimer's with the help of the Game , Completed this project under<br> Summer Internship Program 2020
+              </dd>
+           <dt>Girja Welfare Edu</dt>
+              <dd>Girja Welfare Edu is website used for Education of Orphans in Girja ,I am still working <br>on this project under NSS
+              </dd>
+          
+        </dl>
+    </div>
+    <div id="fourth">
+        <img src="Images/nontech2.jpg" id="certiimg" height="200px" width="250px">
+    	<h3 id="five">Non-Technical Highlights</h3>
+    	<ul id="activity">
+           <li>Sponsorship Head of Social Wing RAIT.</li>
+           <li>Particpated in Donation Drive's , Tree Plantation Cleanup Drive's.</li>
+           <li>Orphanage Teaching.</li>
+           <li>National Level act on Girl Child Education.</li>
+           <li>Member of NSS (National Service Scheme) Unit RAIT.</li>
+           <li>Active praticipation in NSS activities.</li>
+        </ul>
+    </div>
+    <div id="fifth">
+        <img src="Images/contact.jpg" id="phone" height="227px" width="250px">
+        
+        <h3 id="six">Wanna Know More Contact Me through:</h3>
+    	<p id="contact">
+            <i class="fas fa-envelope" style="font-size: 40px; color:firebrick;"></i><span id="mail">thakurpranjal9@gmail.com</span><br>
+    		<a href="https://www.facebook.com/profile.php?id=100008263475999"><i class="fab fa-facebook-square" style="font-size:40px; color: royalblue;"></i></a><span id="fb">Pranjal Thakur (Facebook)</span><br>
+    		<a href="https://www.linkedin.com/in/pranjal-thakur-b3994418b/"><i class="fab fa-linkedin"  style="font-size:40px; color: darkblue;"></i></a><span id="link">Pranjal Thakur (Linkedin)</span><br>
+            <a href="https://github.com/Pranjal1916"><i class="fab fa-github"style="font-size:40px; color: purple;"></i></a><span>Pranjal1911(Github)</span>
+        </p>
+
+    </div>	
+
+
+</body>
+</html>
